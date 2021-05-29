@@ -1,0 +1,17 @@
+body{
+    background-image:url("/Solemne2-PGY3121/imagenes/69052.jpg");
+}
+.pad{
+    margin-top: 5%;
+    margin-bottom: 5%  
+}
+
+.bck-w{
+    background-color: rgb(255, 255, 255);
+    border: rgb(0, 0, 0) 1px solid;
+    border-radius: 3%;
+}
+
+.w-30{
+    width: 30%;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Solemne2-PGY3121/css/registro.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <h3 class="user-select-none">Ground Zero</h3>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Inico</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Galeria</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    
+
+    <div class="container w-30 p-3 bck-w pad">
+      <h4>Formulario de contacto</h4>
+    </div>
+
+
+      <div class="container w-30 p-3 bck-w pad">
+        <div class="row">
+          <div class="col-sm">
+            <form>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Nombre completo</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="ingrese su nombre" required>
+                  </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Correo eléctronico</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                </div>
+                <div class="form-group">
+                  <label for="rutPasaporte">
+                    Rut o Pasaporte
+                  </label>
+                    <input type="text" name="" id="rutPasaporte" class="form-control">
+                    <p>Rut <input type="radio" name="rutPas" id="rut"></p>
+                    <p>Pasaporte <input type="radio" name="rutPas" id="pas"></p>
+                </div>
+                <div class="form-group">
+                    <label for="nroCelular">Celular</label>
+                    <input class="form-control" id="nroCelular" type="tel">
+                </div>
+                <div class="form-group">
+                  <label for="Ciudades">Ciudad</label>
+                  <select name="Ciudades" id="Ciudades" class="form-control">
+                    <option value="0">Seleccione la ciudad</option>
+                    <option value="1">Santiago</option>
+                    <option value="2">Talagante</option>
+                    <option value="3">Ninguna</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                    <label for="Textarea">Comentarios o Mensaje</label>
+                    <textarea class="form-control" id="Textarea" rows="3" minlength="50" maxlength="500" placeholder="Escriba aqui porque le gustaría participar en Ground Zero"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" id="btnEnviar">Enviar</button>
+                <button type="reset" class="btn btn-primary">Limpiar</button>
+              </form>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="/Solemne2-PGY3121/js/api.js"></script>
+</body>
+</html>
