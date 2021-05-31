@@ -1,5 +1,5 @@
 body{
-    background-image:url("/Solemne2-PGY3121/imagenes/69052.jpg");
+    background-image:url("../imagenes/pintura3.jpg");
 }
 .pad{
     margin-top: 5%;
@@ -11,7 +11,9 @@ body{
     border: rgb(0, 0, 0) 1px solid;
     border-radius: 3%;
 }
-
-.w-30{
-    width: 30%;
+.w-35{
+    width: 35%;
+}
+.text-center{
+    text-align: center;
 }

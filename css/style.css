@@ -2,3 +2,27 @@
     width: auto;
     height: 300px;
 }
+.tex-center{
+    text-align: center;
+}
+
+.tam-log{
+    width: 40px;
+    height: 40px;
+}
+.max-tam-img{
+    max-height: 150px;
+}
+
+.bck-color{
+    background-color: rgb(219, 205, 205);
+    border-top: black 1px solid;
+}
+.bck-color-2{
+    background-color: rgb(130, 185, 187);
+}
+
+.link{
+    color:black;
+    text-decoration: none;
+}
