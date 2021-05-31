@@ -24,7 +24,7 @@
               <a class="nav-link" href="#">Galeria</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../html/registro.html">Contacto</a>
+              <a class="nav-link" href="../html/registro.html" target="_blank">Contacto</a>
             </li>
           </ul>
         </div>
@@ -48,7 +48,7 @@
 </section>
 <!--SEPARADOR SOMBREADO-->
 <div class="shadow-sm p-3 mb-5 bg-white rounded"></div>
-<!--NOSOTROS Y API-->
+<!--SOBRE NOSOTROS-->
 <section>
   <div class="container">
       <div class="row">
@@ -60,7 +60,6 @@
             </p>
         </div>
         <div class="col-sm">
-
         </div>
       </div>
     </div>
@@ -157,9 +156,9 @@
         </a>
       </div>
 </section>
-<!--API SPOTIFY-->
 <!--SEPARADOR SOMBREADO-->
 <div class="shadow-sm p-3 mb-5 bg-white rounded"></div>
+<!--API SPOTIFY-->
 <section>
   <div class="container">
     <div class="row">
@@ -167,35 +166,54 @@
       </div>
       <div class="col-sm">
         <H3 class="text-center">¿Quieres ver canciones?</H3>
-        <p class="text-center">Mientras ves las obras de arte, puedes ver las canciones de tu artista favorito!</p>
+        <p class="text-center">Mientras ves las obras de arte, puedes ver los albumes y canciones de tu artista favorito!</p>
         <div class="form-group">
           <label for="nombreArtista">Nombre del artista</label>
           <input type="text" name="" id="nombreArtista" class="form-control" placeholder="Ingresa el nombre del artista">
         </div>
         <div class="form-group">
           <label for="token">Token</label>
-          <p>BQAuahWnauVvRRP2Xe_8_wrBBRjHb_w06pfFN5svguYk2uJ8GlguO9ZHu4Xi3VmMPFHM23K4CLIEMK3Uiu4rPnO5GQp5sqGV_yeM6HxfF_RkjnH7qPqN66QMwGdmMejB0SDulNWpHL2vZrjg3bBz7tgWbxRt3hw</p>
+          <!--BQAuahWnauVvRRP2Xe_8_wrBBRjHb_w06pfFN5svguYk2uJ8GlguO9ZHu4Xi3VmMPFHM23K4CLIEMK3Uiu4rPnO5GQp5sqGV_yeM6HxfF_RkjnH7qPqN66QMwGdmMejB0SDulNWpHL2vZrjg3bBz7tgWbxRt3hw-->
           <input type="text" name="" id="token" class="form-control" placeholder="Ingresa tu token">
         </div>  
-        <button class="btn btn-primary" id="traerPlaylist">Buscar</button>
-        <button class="btn btn-primary" id="borrar">Limpiar</button>
+        <button class="btn btn-primary" id="traerSpotify">Buscar</button>
+        <button class="btn btn-primary" id="btnLimpiar">Limpiar</button>
+      </div>
+      <div class="col-sm">
+      </div>
+    </div>
+    <!--SEPARADOR-->
+    <div class="shadow-none p-3"></div>
+    <div class="card-columns" id="contenedor">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title that wraps to a new line</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+  </div>
+</section>
+<!--<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+      </div>
+      <div class="col-sm">
+        <div class="card" style="width: 18rem;" id="contenedor">
+          <img src="..." class="card-img-top" alt="imagenAlbum">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text"></p>
+            <a href="#" class="btn btn-primary"></a>
+          </div>
+        </div>
       </div>
       <div class="col-sm">
       </div>
     </div>
   </div>
-</section>
-<section>
-  <!--<div class="container" id="contenedor"></div>-->
-  <div class="card" style="width: 18rem;" id="contenedor">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</section>
+</section>-->
 <!--SEPARADOR SOMBREADO-->
 <div class="shadow-sm p-3 mb-5 bg-white rounded"></div>
 <!--PIE DE PAGINA-->
@@ -207,7 +225,7 @@
         <div class="col-sm">
           <h3 class="center">Contactos</h3> <hr>
           <p class="center">
-          <a href="../html/registro.html" class="link">Formulario de contacto</a>
+          <a href="../html/registro.html" class="link" target="_blank">Formulario de contacto</a>
           </p>
         </div>
         <!--REDES SOCIALES-->
