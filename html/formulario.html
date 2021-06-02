@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ground Zero</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/registro.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bck-color">
+      <img src="../imagenes/logoGroundZero.png" alt="logoGroundZero" class="tam-log">
+        <h3 class="user-select-none"><i>Ground Zero</i></h3>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../html/home.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/registro.html" target="_blank">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  </header>
+
+  <section>
+    <div class="container w-35 p-3 bck-w pad">
+      <div class="row">
+        <div class="col-sm">
+          <form id="formularioContacto">
+              <h4 class="text-center">Formulario de contacto</h4>
+              <br>
+              <div class="form-group">
+                  <label for="nombreCompleto">Nombre completo</label>
+                  <input type="text" class="form-control" id="nombreCompleto" placeholder="ingrese su nombre y apellido" maxlength="100">
+                </div>
+              <div class="form-group">
+                <label for="email">Correo eléctronico</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ingrese su correo eléctronico">
+              </div>
+              <div class="form-group">
+                <label for="rutPasaporte">
+                  Seleccione Rut o Pasaporte
+                </label>
+                <div class="form-group" id=rutPas></div>
+                  <p>  Rut <input type="radio" name="rutPas" id="rut"><br> Pasaporte <input type="radio" name="rutPas" id="pas"></p>
+              </div>
+              <div class="form-group">
+                  <label for="nroCelular">Celular</label>
+                  <input class="form-control" id="nroCelular" type="tel">
+              </div>
+              <div class="form-group">
+                <label for="ciudades">Ciudad</label>
+                <select name="ciudades" id="ciudades" class="form-control">
+                  <option value="0">Seleccione la ciudad</option>
+                  <option value="1">Santiago</option>
+                  <option value="2">Talagante</option>
+                  <option value="3">Ninguna</option>
+                </select>
+              </div>
+              <div class="form-group">
+                  <label for="textArea">Comentarios o Mensaje</label>
+                  <textarea class="form-control" id="textArea" rows="3" minlength="50" maxlength="500" placeholder="Escriba aqui porque le gustaría participar en Ground Zero"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+              <button type="reset" class="btn btn-primary" id="btnLimpiar">Limpiar</button>
+            </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+        <div class="h-auto d-inline-block w-100 p-3 bck-color">
+          <div class="container">
+            <div class="row">
+              <!--CONTACTOS-->
+              <div class="col-sm">
+                <h3 class="tex-center">Contactos</h3> <hr>
+                <p class="tex-center">
+                <a href="../html/registro.html" class="link" target="_blank">Formulario de contacto</a>
+                </p>
+              </div>
+              <!--REDES SOCIALES-->
+              <div class="col-sm">
+                <h3 class="tex-center">Redes sociales</h3> <hr>
+                <p class="tex-center">
+                  <!--LOGO FACEBOOK-->
+                  <a href="https://www.facebook.com" target="_blank"><img src="../imagenes/svg-logo/facebook.svg" alt="Logo_Facebook"></a><br>
+                  <!--LOGO INSTAGRAM-->
+                  <a href="https://www.instagram.com" target="_blank"><img src="../imagenes/svg-logo/instagram.svg" alt="Logo_Instagram"></a> <br>
+                  <!--LOGO TWITTER-->
+                  <a href="https://twitter.com/?lang=es" target="_blank"><img src="../imagenes/svg-logo/twitter.svg" alt="Logo_Twitter"></a>
+                </p>
+              </div>
+              <!--UBICACIÓN-->
+              <div class="col-sm">
+                <h3 class="tex-center">Ubicación</h3>
+                <hr> 
+                <p class="tex-center"><img src="../imagenes/svg-logo/geo-alt-fill.svg" alt="logo_ubicación"> Santiago de Chile, Los Quillayes 0103, <wbr> edificio #24</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--SEGUNDA PARTE DEL FOOTER, DERECHOS DE AUTOR-->
+        <div class="h-100 d-inline-block w-100 p-3 bck-color-2">
+          <div class="row">
+              <div class="col-6">
+                  <div class="tex-center">
+                      © 2021 Todos los Derechos Reservados | Victor Vargas
+                  </div>
+              </div>
+              <div class="col-6">
+                <div class="tex-center">
+                  <a href="#" class="link">Informacion Compañia</a> | <a href="#" class="link">Privacion y Politica</a> | <a href="#" class="link">Terminos y Condiciones</a>
+                </div>
+              </div>
+          </div>
+      </div>
+        </footer>  
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../js/contacto.js"></script>
+</body>
+</html>
