@@ -1,5 +1,5 @@
 body{
-    background-image:url("../imagenes/pintura3.jpg");
+    background-image:url("../imagenes/pintura4.jpg");
 }
 .pad{
     margin-top: 5%;
@@ -16,4 +16,11 @@ body{
 }
 .text-center{
     text-align: center;
+}
+.tam-log{
+    width: 40px;
+    height: 40px;
+}
+.alert{
+    border: red 1px solid;
 }
