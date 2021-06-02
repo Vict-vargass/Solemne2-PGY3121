@@ -22,7 +22,6 @@ $(document).ready(function(){
         var email= $('#email')
         var rut = $('#rutPersona')
         var pasaporte = $('#pasaporte')
-        var celular = $('#nroCelular')
         var ciudad = $('#ciudades')
         var mensaje = $('#textArea') 
         if(nombreCompleto.val()==""){
@@ -41,10 +40,6 @@ $(document).ready(function(){
             pasaporte.addClass('alert')
             event.preventDefault();
         }
-        if(celular.val()==""){
-            celular.addClass('alert')
-            event.preventDefault();
-        }
         if(ciudad.val()=="0"){
             ciudad.addClass('alert')
             event.preventDefault();
@@ -59,7 +54,6 @@ $(document).ready(function(){
             email.val("").removeClass("alert");
             rut.val("").removeClass("alert");
             pasaporte.val("").removeClass("alert");
-            celular.val("").removeClass("alert");
             ciudad.val(0).removeClass("alert")
             mensaje.val("").removeClass("alert")
         } 
@@ -78,7 +72,7 @@ $(document).ready(function(){
         email.val("").removeClass("alert");
         rut.val("").removeClass("alert");
         pasaporte.val("").removeClass("alert");
-        celular.val("").removeClass("alert");
+        celular.val("")
         ciudad.val(0).removeClass("alert");
         mensaje.val("").removeClass("alert");
     })
