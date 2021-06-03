@@ -16,36 +16,56 @@ $(document).ready(function(){
         var agregaInput3 = $('#rutPas')
         agregaInput3.html('<input type="text" name="" id="pasaporte" class="form-control" placeholder="Ingrese su pasaporte"  maxlength="20">')
     })
+    //CONJUNTO DE REMOVEDORES DE CLASE ALERT
+    $('#nombreCompleto').click(function(){
+        $('#nombreCompleto').removeClass("alert")
+    })
+    $('#email').click(function(){
+        $('#email').removeClass("alert")
+    })
+    $('#rutPersona').click(function(){
+        $('#rutPersona').removeClass("alert")
+    })
+    $('#pasaporte').click(function(){
+        $('#pasaporte').removeClass("alert")
+    })
+    $('#ciudades').click(function(){
+        $('#ciudades').removeClass("alert")
+    })
+    $('#textArea').click(function(){
+        $('#textArea').removeClass("alert")
+    })//FIN CONJUNTO
+    
     //ENVIAR Y VALIDAR EL FORMULARIO
-    $('#formularioContacto').submit(function(){
+    $('#formularioContacto').submit(function(){ 
         var nombreCompleto=$('#nombreCompleto')
-        var email= $('#email')
-        var rut = $('#rutPersona')
-        var pasaporte = $('#pasaporte')
-        var ciudad = $('#ciudades')
-        var mensaje = $('#textArea') 
+        var email= $('#email');
+        var rut = $('#rutPersona');
+        var pasaporte = $('#pasaporte');
+        var ciudad = $('#ciudades');
+        var mensaje = $('#textArea'); 
         if(nombreCompleto.val()==""){
             nombreCompleto.addClass('alert')
             event.preventDefault();
         }
         if(email.val()==""){
-            email.addClass('alert')
+            email.addClass('alert');
             event.preventDefault();
         }
         if(rut.val()==""){
-            rut.addClass('alert')
+            rut.addClass('alert');
             event.preventDefault();
         }
         if(pasaporte.val()==""){
-            pasaporte.addClass('alert')
+            pasaporte.addClass('alert');
             event.preventDefault();
         }
         if(ciudad.val()=="0"){
-            ciudad.addClass('alert')
+            ciudad.addClass('alert');
             event.preventDefault();
         }
         if(mensaje.val()==""){
-            mensaje.addClass('alert')
+            mensaje.addClass('alert');
             event.preventDefault();
         }
         else{
@@ -54,8 +74,8 @@ $(document).ready(function(){
             email.val("").removeClass("alert");
             rut.val("").removeClass("alert");
             pasaporte.val("").removeClass("alert");
-            ciudad.val(0).removeClass("alert")
-            mensaje.val("").removeClass("alert")
+            ciudad.val(0).removeClass("alert");
+            mensaje.val("").removeClass("alert");
         } 
         }
     )
