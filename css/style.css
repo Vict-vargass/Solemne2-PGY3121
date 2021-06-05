@@ -31,3 +31,6 @@
 .dec-hov:hover{
     border: rgb(61, 61, 61) 1px solid;
 }
+.alerta{
+    border: rgb(216, 8, 8) 1px solid;
+}
