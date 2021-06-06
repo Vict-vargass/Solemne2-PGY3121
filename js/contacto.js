@@ -95,17 +95,14 @@ $(document).ready(function(){
             mensaje.addClass('alert');
             event.preventDefault();
         }
-        else{
-            alert("El formulario a sido enviado con exito")
-            nombreCompleto.val("").removeClass("alert");
-            email.val("").removeClass("alert");
-            rut.val("").removeClass("alert");
-            pasaporte.val("").removeClass("alert");
-            ciudad.val(0).removeClass("alert");
-            mensaje.val("").removeClass("alert");
-        } 
+        //COMPRUEBA TODOS LOS CAMPOS Y PREVIENE EL ENVIO
+        if(nombreCompleto.val()=="" || email.val()=="" || rut.val()=="" || pasaporte.val()=="" || ciudad.val()=="" || mensaje.val()==""){
+            event.preventDefault();
+            existe==false
+        }else{
+            alert("Formulario enviado correctamente")
         }
-    )
+    })
     //LIMPIAR EL FORMULARIO
     $('#btnLimpiar').click(function(){
         var nombreCompleto=$('#nombreCompleto');
